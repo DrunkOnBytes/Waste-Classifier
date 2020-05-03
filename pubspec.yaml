@@ -1,0 +1,32 @@
+name: tensorflow_lite_flutter
+description: A flutter app to demonstrate usage of tensor flow lite ML.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+  tflite: ^1.0.5
+  percent_indicator: ^2.1.1+1
+  camera: ^0.5.7+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/converted_model.tflite
+    - assets/labels.txt
